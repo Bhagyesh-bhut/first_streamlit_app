@@ -13,4 +13,4 @@ st.text("🐔 Hard-Boiled Free Ege")
 st.text("🥑🍞 Avocado Toast")
  
 
-streamlit.header("🍌🥭 Build Your Own Fruit Smoothie 🥝🍇")
+st.header("🍌🥭 Build Your Own Fruit Smoothie 🥝🍇")
