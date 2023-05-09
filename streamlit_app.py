@@ -44,7 +44,7 @@ st.dataframe(fruityvice_normalized)
 
 my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
 my_cur = my_cnx.cursor()
-my_cur.execute("select * from FRUIT_LOAD_LIST")
+my_cur.execute("SELECT * FROM PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST")
 my_data_rows = my_cur.fetchall()
 st.text("The Fruit load list contains:")
 st.text(my_data_rows)
