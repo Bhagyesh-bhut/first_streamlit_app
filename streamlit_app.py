@@ -44,10 +44,10 @@ st.dataframe(fruityvice_normalized)
 
 my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
 my_cur = my_cnx.cursor()
-my_cur.execute("select * from fruit_load_list")
-my_data_row = my_cur.fetchall()
+my_cur.execute("select * from FRUIT_LOAD_LIST")
+my_data_rows = my_cur.fetchall()
 st.text("The Fruit load list contains:")
-st.text(my_data_row)
+st.text(my_data_rows)
 
 add_my_fruit = st.text_input('What fruit would you like Choose?')
 st.text("Thanks for adding "+add_my_fruit)
