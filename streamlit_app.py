@@ -51,3 +51,5 @@ st.text(my_data_rows)
 
 add_my_fruit = st.text_input('What fruit would you like Choose?')
 st.text("Thanks for adding "+add_my_fruit)
+
+my_cur.execute("INSERT INTO PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST VALUES ('from streamlit')")
